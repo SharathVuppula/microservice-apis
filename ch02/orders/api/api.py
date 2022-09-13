@@ -12,6 +12,7 @@ from orders.api.schemas import GetOrderSchema, CreateOrderSchema, GetOrdersSchem
 orders = []
 
 
+
 @app.get('/orders', response_model=GetOrdersSchema)
 def get_orders():
     return {'orders': orders}
